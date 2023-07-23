@@ -1,0 +1,36 @@
+name: "MySpider"
+
+urls:
+  main_page: "https://api.bilibili.com/x/space/wbi/arc/search?"
+  detail_page: "https://api.bilibili.com/x/web-interface/wbi/view?aid={aid}"
+
+params:
+  mid: 1895195099
+  ps: 30
+  tid: 0
+  pn: 1
+  keyword: ""
+  order: "pubdate"
+  platform: "web"
+  web_location: 1550101
+  order_avoided: "true"
+  w_rid:
+    - "8b7e4e9cb36f83e8a880d20e7434fd32"
+    - "4ccdf4f501b4750272181bba2d36e60e"
+    - "b9918f7af041b828eb35f707ec081dc9"
+    - "5df434821002c6663103e2236e7f78a1"
+    - "9d0feb7a9a95cbc02aa7a6744dd3ea7b"
+    - "c0eca9247f3b6612154a404df31e6600"
+  wts:
+    - 1689056961
+    - 1689064813
+    - 1689065086
+    - 1689065115
+    - 1689065140
+    - 1689065165
+
+headers:
+  User-Agent: "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko)
+    Chrome/88.0.4324.96 Safari/537.36 Accept-Language = en-US,en;q=0.9"
+
+save_path: "./results.json"
